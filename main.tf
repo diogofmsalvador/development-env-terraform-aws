@@ -55,7 +55,7 @@ resource "aws_security_group" "dev_security_group" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["94.60.215.243/32"]
+    cidr_blocks = [""] #Your public IP Address followed by /32
   }
 
   egress { # Allow all outbound traffic (Internet)
